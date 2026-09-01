@@ -55,7 +55,7 @@ Open in Google Colab, then:
 ```
 Then run all cells top to bottom.
 
-## Key Design Decisions (interview talking points)
+## Key Design Decisions 
 
 - **Why diagnose before fixing** — used `pd.to_numeric(errors="coerce")` to identify exactly which rows and values were malformed before applying any fix, rather than blindly dropping or imputing.
 - **Why one-hot over label encoding** — nominal categories (Contract, PaymentMethod, etc.) have no true order; label encoding would have introduced a false ranking.
